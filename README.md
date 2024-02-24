@@ -31,3 +31,19 @@ Barber Connect é um projeto de site de barbearia que visa facilitar o agendamen
     - Escolha um banco de dados adequado, como PostgreSQL ou MongoDB, e utilize ORMs como Sequelize ou Mongoose.
 6. **Testes e Manutenção:**
     - Escreva testes automatizados para verificar a funcionalidade e mantenha uma estrutura de diretórios organizada.
+  
+## Como rodar o projeto
+
+**Pré-requisitos**
+    -Node.js (versão 14.x ou superior)
+    -npm (gerenciador de pacotes do Node.js)
+
+1. Clone o repositório do github.
+   git clone https://github.com/brennoeduardo/easybarbershop_web.git
+2. Instale as dependências do projeto:
+   yarn install
+3. Execução do Projeto
+   yarn dev
+4. Acesso ao Site
+   Abra um navegador da web e acesse http://localhost:3000 para visualizar o site da barbearia.
+    
