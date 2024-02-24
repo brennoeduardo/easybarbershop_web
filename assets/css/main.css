@@ -1,0 +1,32 @@
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #BECFDE;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #44A2B2;
+    transition: .5s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #065461;
+}
+
+* {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.required-field  .v-label::before {
+    content: "*\00a0" ;
+    color: red;
+}
