@@ -1602,7 +1602,7 @@ chalk@^5.3.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-5.3.0.tgz#67c20a7ebef70e7f3970a01f90fa210cb6860385"
 
-chokidar@^3.5.1, chokidar@^3.5.3, chokidar@^3.6.0:
+"chokidar@>=3.0.0 <4.0.0", chokidar@^3.5.1, chokidar@^3.5.3, chokidar@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.6.0.tgz#197c6cc669ef2a8dc5e7b4d97ee4e092c3eb0d5b"
   dependencies:
@@ -2489,6 +2489,10 @@ ignore@^5.2.4, ignore@^5.3.1:
 image-meta@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/image-meta/-/image-meta-0.2.0.tgz#ea28d05d52f5ad35f75b14f46278a44d626f48bc"
+
+immutable@^4.0.0:
+  version "4.3.5"
+  resolved "https://registry.yarnpkg.com/immutable/-/immutable-4.3.5.tgz#f8b436e66d59f99760dc577f5c99a4fd2a5cc5a0"
 
 imurmurhash@^0.1.4:
   version "0.1.4"
@@ -3878,6 +3882,14 @@ safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
 
+sass@^1.71.1:
+  version "1.71.1"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.71.1.tgz#dfb09c63ce63f89353777bbd4a88c0a38386ee54"
+  dependencies:
+    chokidar ">=3.0.0 <4.0.0"
+    immutable "^4.0.0"
+    source-map-js ">=0.6.2 <2.0.0"
+
 scule@^1.0.0, scule@^1.1.0, scule@^1.1.1, scule@^1.2.0, scule@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/scule/-/scule-1.3.0.tgz#6efbd22fd0bb801bdcc585c89266a7d2daa8fbd3"
@@ -4023,7 +4035,7 @@ socks@^2.7.1:
     ip-address "^9.0.5"
     smart-buffer "^4.2.0"
 
-source-map-js@^1.0.1, source-map-js@^1.0.2:
+"source-map-js@>=0.6.2 <2.0.0", source-map-js@^1.0.1, source-map-js@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
 
@@ -4229,6 +4241,10 @@ terser@^5.17.4:
     acorn "^8.8.2"
     commander "^2.20.0"
     source-map-support "~0.5.20"
+
+tiny-cookie@^1.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/tiny-cookie/-/tiny-cookie-1.0.1.tgz#753786079c642a3c3d0b2accad600f8de119ac2a"
 
 tiny-invariant@^1.1.0:
   version "1.3.3"
@@ -4578,6 +4594,12 @@ vue-bundle-renderer@^2.0.0:
   dependencies:
     ufo "^1.2.0"
 
+vue-cookie@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/vue-cookie/-/vue-cookie-1.1.4.tgz#b8b46d112bda9f93a2f47017c2ed5282d2064fda"
+  dependencies:
+    tiny-cookie "^1.0"
+
 vue-devtools-stub@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/vue-devtools-stub/-/vue-devtools-stub-0.1.0.tgz#a65b9485edecd4273cedcb8102c739b83add2c81"
@@ -4587,6 +4609,10 @@ vue-router@^4.3.0:
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.3.0.tgz#d5913f27bf68a0a178ee798c3c88be471811a235"
   dependencies:
     "@vue/devtools-api" "^6.5.1"
+
+vue3-toastify@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/vue3-toastify/-/vue3-toastify-0.2.1.tgz#d3999c9f29add53416b0bc23f3ede81cf724b654"
 
 vue@^3.4.19:
   version "3.4.19"
