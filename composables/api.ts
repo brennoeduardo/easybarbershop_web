@@ -1,6 +1,5 @@
 import type { UseFetchOptions } from "nuxt/app";
 import { defu } from 'defu'
-import VueCookie from 'vue-cookie';
 
 interface ApiResponse {
   success: boolean;
@@ -16,15 +15,12 @@ export const useApi = async <T>(path: string, options?: UseFetchOptions<T>): Pro
     }
   } = useRuntimeConfig()
 
-  const token = VueCookie.get('token');
-
   const defaults: UseFetchOptions<T> = {
     baseURL,
     key: path.toString(),
     watch: false,
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': `${token}`
     },
     onResponse (_ctx) {
       // _ctx.response._data = new myBusinessResponse(_ctx.response._data)

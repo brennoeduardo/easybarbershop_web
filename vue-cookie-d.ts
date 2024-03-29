@@ -1,1 +1,1 @@
-declare module 'vue-cookie';
+// declare module 'vue-cookie';

@@ -15,7 +15,7 @@
         ></v-text-field>
         <v-text-field
           v-model="form.password"
-          label="Password"
+          label="Senha"
           variant="solo-filled"
           clearable
           class="card-input"
@@ -24,18 +24,22 @@
           :append-inner-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
         ></v-text-field>
         <v-btn class="card-btn" @click="login">Login</v-btn>
-        <v-btn class="card-btn">Cadastrar-se</v-btn>
-        <v-btn class="card-btn" append-icon="mdi-google"
-          >Login com Google</v-btn
-        >
+        <v-btn class="card-btn" @click="showModals.register = true ">Cadastrar-se</v-btn>
+        <!-- <v-btn class="card-btn" append-icon="mdi-google">Login com Google</v-btn> -->
         <v-divider></v-divider>
         <v-btn class="card-btn">Esqueceu sua senha?</v-btn>
       </div>
     </v-card-text>
+    <ModalRegister v-model:enable="showModals.register" />
   </v-card>
 </template>
 
 <script setup>
+
+definePageMeta({
+  layout: 'custom'
+});
+
 
 const { $toast } = useNuxtApp();
 
@@ -45,6 +49,11 @@ const form = reactive({
   mail: null,
   password: null,
 });
+
+const showModals = reactive({
+  register: false,
+  forgot: false
+})
 
 const valid = () => {
 const mailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -86,9 +95,17 @@ const login = async () => {
         console.log(error.message);
         $toast.error(error.message)
     }
-
-
 };
+
+const register = async () => {
+  try {
+    
+  } catch (error) {
+    
+  }
+}
+
+
 </script>
 
 <style scoped>
@@ -134,7 +151,7 @@ const login = async () => {
   transform: scale(1.02);
   transition: 0.5s;
   background-color: #fff;
-  color: #000;
+  color: #009EE6;
 }
 
 @media (max-width: 600px) {
